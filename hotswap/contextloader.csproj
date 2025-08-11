@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <BaseOutputPath>C:\Users\hails\Desktop\DEFCON-TOOLS\src\defcon-33-gg\x64</BaseOutputPath>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <None Remove="bin\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="2.3.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Sandbox.AppSystem">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\sbox\bin\managed\Sandbox.AppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.Engine">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\sbox\bin\managed\Sandbox.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.GameInstance">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\sbox\bin\managed\Sandbox.GameInstance.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.Reflection">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\sbox\bin\managed\Sandbox.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\sbox\bin\managed\Sandbox.System.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
